@@ -1,0 +1,143 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+/* Top Player Styles */
+.top-players{
+    margin-bottom: 30px;
+}
+.section-title{
+    color: #562EFF;
+    margin-top: 3px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+   
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+    
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 28px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+/*---- top blogs styles
+--------------------------- */
+
+.blog .thumbnail img{
+    width: 224px;
+    height: 127px;
+}
+.blog{
+    display: flex;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-titile{
+    font-size: 20px;
+}
+.blog-author{
+    color: #9F9F9F;
+    font-size: 16px;
+}
+.blog-author a{
+    color: #562EFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+/* Courses styles */
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.fa-star{
+    font-size: 12px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+.course-duration{
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+    margin-right: 40px;
+}
+.course{
+    width: 270px;
+    box-shadow: 5px 5px 5px 5px rgb(230, 225, 225);
+    border-radius: 2px;
+}
+/* Media Querries */
+/* Mobile Devices */
+@media only screen and (max-width:688px) 
+{
+    .container{
+        width: 100%;
+    }
+    .players, .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .player, .blog{
+        flex-direction: column;
+    }
+}
+/* Tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
